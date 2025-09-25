@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Kepler-22 b",
+    "disc_year": 2011,
+    "orbital_period": 289.9,
+    "radius": 2.4,
+    "distance": 195
+  },
+  {
+    "name": "Kepler-452 b",
+    "disc_year": 2015,
+    "orbital_period": 384.8,
+    "radius": 1.6,
+    "distance": 538
+  },
+  {
+    "name": "Kepler-62 f",
+    "disc_year": 2013,
+    "orbital_period": 267.3,
+    "radius": 1.4,
+    "distance": 368
+  },
+  {
+    "name": "Kepler-186 f",
+    "disc_year": 2014,
+    "orbital_period": 129.9,
+    "radius": 1.2,
+    "distance": 151
+  },
+  {
+    "name": "Proxima Centauri b",
+    "disc_year": 2016,
+    "orbital_period": 11.2,
+    "radius": 1.1,
+    "distance": 1.3
+  },
+  {
+    "name": "TRAPPIST-1 d",
+    "disc_year": 2016,
+    "orbital_period": 4.0,
+    "radius": 0.8,
+    "distance": 12
+  },
+  {
+    "name": "TRAPPIST-1 e",
+    "disc_year": 2017,
+    "orbital_period": 6.1,
+    "radius": 0.9,
+    "distance": 12
+  },
+  {
+    "name": "TRAPPIST-1 f",
+    "disc_year": 2017,
+    "orbital_period": 9.2,
+    "radius": 1.0,
+    "distance": 12
+  },
+  {
+    "name": "TRAPPIST-1 g",
+    "disc_year": 2017,
+    "orbital_period": 12.4,
+    "radius": 1.1,
+    "distance": 12
+  },
+  {
+    "name": "HD 209458 b",
+    "disc_year": 1999,
+    "orbital_period": 3.5,
+    "radius": 13.9,
+    "distance": 47
+  },
+  {
+    "name": "51 Pegasi b",
+    "disc_year": 1995,
+    "orbital_period": 4.2,
+    "radius": 14.2,
+    "distance": 15.6
+  },
+  {
+    "name": "Gliese 581 g",
+    "disc_year": 2010,
+    "orbital_period": 36.6,
+    "radius": 1.5,
+    "distance": 20.3
+  },
+  {
+    "name": "Gliese 581 d",
+    "disc_year": 2007,
+    "orbital_period": 66.6,
+    "radius": 2.2,
+    "distance": 20.3
+  },
+  {
+    "name": "Tau Boötis b",
+    "disc_year": 1996,
+    "orbital_period": 3.3,
+    "radius": 15.8,
+    "distance": 15.6
+  },
+  {
+    "name": "LHS 1140 b",
+    "disc_year": 2017,
+    "orbital_period": 24.7,
+    "radius": 1.7,
+    "distance": 12
+  }
+]

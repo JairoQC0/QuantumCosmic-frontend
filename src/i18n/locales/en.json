@@ -1,0 +1,23 @@
+{
+  "navbar": {
+    "ml": "ML",
+    "exoplanets": "Exoplanets",
+    "game": "Game"
+  },
+  "pages": {
+    "ml": {
+      "title": "Machine Learning",
+      "desc": "This section will be dedicated to Machine Learning models applied to the study of the universe."
+    },
+    "exoplanets": {
+      "title": "NASA Exoplanets",
+      "desc": "This section will display information from NASA's API about discovered exoplanets."
+    },
+    "game": {
+      "title": "Game",
+      "desc": "Here will be a space mini-game to explore the cosmos interactively."
+    }
+  },
+  "footer": "© 2025 QuantumCosmic 🚀 | Inspired by SpaceX",
+  "wip": "This page is under development"
+}
