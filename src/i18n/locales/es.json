@@ -1,23 +1,52 @@
 {
   "navbar": {
-    "ml": "ML",
+    "home": "Inicio",
     "exoplanets": "Exoplanetas",
-    "game": "Juego"
+    "game": "Juego",
+    "ia": "IA"
   },
   "pages": {
-    "ml": {
-      "title": "Machine Learning",
-      "desc": "Aquí irá la sección visual dedicada a modelos de Machine Learning aplicados al estudio del universo."
+    "ia": {
+      "title": "Inteligencia Artificial",
+      "desc": "Ingresa los datos del objeto estelar y la IA evaluará la probabilidad de que sea un exoplaneta.",
+      "inputTitle": "Datos de Entrada",
+      "labelDistance": "Distancia a la estrella (pc)",
+      "labelPeriod": "Periodo orbital (días)",
+      "labelRadius": "Radio del planeta (R⊕)",
+      "buttonEvaluate": "Evaluar",
+      "result": "La predicción de la IA aparecerá aquí."
     },
     "exoplanets": {
       "title": "Exoplanetas NASA",
-      "desc": "Esta sección mostrará información proveniente de la API de la NASA sobre exoplanetas descubiertos."
+      "desc": "Filtra y explora algunos exoplanetas descubiertos, con sus propiedades principales.",
+      "noResults": "No se encontraron planetas con esos filtros."
     },
     "game": {
-      "title": "Juego",
-      "desc": "Aquí estará un minijuego espacial para explorar el cosmos de manera interactiva."
+      "title": "Juego de Memoria",
+      "desc": "Este es solo un minijuego de memoria. Encuentra los pares de exoplanetas por nombre y disfruta mientras exploramos el universo.",
+      "score": "Pares encontrados: {{score}}",
+      "winMessage": "¡Felicidades! Todos los pares encontrados ✨",
+      "note": "Nota: Este juego es un minijuego temporal. El juego real aún está en desarrollo."
+    },
+    "home": {
+      "title": "EXOPLANETAS",
+      "subtitle": "Explora nuevos mundos más allá de nuestro sistema solar y descubre planetas orbitando estrellas distantes. Cada exoplaneta tiene su propia historia esperando ser descubierta."
     }
   },
-  "footer": "© 2025 QuantumCosmic 🚀 | Inspirado en SpaceX",
-  "wip": "Esta página está en proceso de desarrollo"
+  "footer": "© {{year}} QuantumCosmic",
+  "wip": "Esta página está en proceso de desarrollo",
+  "exoplanetCard": {
+    "year": "Año de Descubrimiento",
+    "period": "Periodo Orbital",
+    "periodUnit": "días",
+    "radius": "Radio",
+    "distance": "Distancia"
+  },
+  "filters": {
+    "searchPlaceholder": "Buscar por nombre...",
+    "yearPlaceholder": "Año",
+    "minRadiusPlaceholder": "Radio mínimo (R⊕)",
+    "maxRadiusPlaceholder": "Radio máximo (R⊕)",
+    "maxDistancePlaceholder": "Distancia máx (pc)"
+  }
 }

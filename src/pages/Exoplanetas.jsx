@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Section from "../components/Section";
 import ExoplanetFilters from "../components/ExoplanetFilters";
 import ExoplanetCard from "../components/ExoplanetCard";
@@ -6,6 +7,9 @@ import StarsBackground from "../components/StarsBackground";
 import exoplanets from "../data/exoplanets.json";
 
 export default function Exoplanetas() {
+  // Inicializamos useTranslation
+  const { t } = useTranslation();
+  
   const [search, setSearch] = useState("");
   const [year, setYear] = useState("");
   const [minRadius, setMinRadius] = useState("");
@@ -31,10 +35,11 @@ export default function Exoplanetas() {
     <div className="relative min-h-screen z-10">
       <StarsBackground />
 
-      <Section title="Exoplanetas NASA">
+      {/* Usamos titleKey en lugar de title, como acordamos */}
+      <Section titleKey="pages.exoplanets.title">
         <p className="text-gray-400 max-w-2xl mx-auto mb-8 text-center">
-          Filtra y explora algunos exoplanetas descubiertos, con sus propiedades
-          principales.
+          {/* Traducción de la descripción */}
+          {t("pages.exoplanets.desc")}
         </p>
 
         <ExoplanetFilters
@@ -57,7 +62,8 @@ export default function Exoplanetas() {
             ))
           ) : (
             <p className="text-gray-400 col-span-full text-center">
-              No se encontraron planetas con esos filtros.
+              {/* Traducción del mensaje de no resultados */}
+              {t("pages.exoplanets.noResults")}
             </p>
           )}
         </div>

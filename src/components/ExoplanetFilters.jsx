@@ -1,4 +1,5 @@
 import { Search } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function ExoplanetFilters({
   search,
@@ -12,6 +13,8 @@ export default function ExoplanetFilters({
   maxDistance,
   setMaxDistance,
 }) {
+  const { t } = useTranslation();
+  
   return (
     <div className="bg-gray-900 border border-gray-800 rounded-xl p-4 mb-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -20,7 +23,8 @@ export default function ExoplanetFilters({
           <Search className="w-4 h-4 text-gray-400" />
           <input
             type="text"
-            placeholder="Buscar por nombre..."
+            // Traducción de placeholder
+            placeholder={t("filters.searchPlaceholder")}
             className="bg-transparent outline-none text-white w-full py-2"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -30,7 +34,7 @@ export default function ExoplanetFilters({
         {/* 📅 Año */}
         <input
           type="number"
-          placeholder="Año"
+          placeholder={t("filters.yearPlaceholder")}
           className="bg-gray-800 rounded-lg px-3 py-2 text-white"
           value={year}
           onChange={(e) => setYear(e.target.value)}
@@ -39,7 +43,7 @@ export default function ExoplanetFilters({
         {/* 🌍 Radio mínimo */}
         <input
           type="number"
-          placeholder="Radio mínimo (R⊕)"
+          placeholder={t("filters.minRadiusPlaceholder")}
           className="bg-gray-800 rounded-lg px-3 py-2 text-white"
           value={minRadius}
           onChange={(e) => setMinRadius(e.target.value)}
@@ -48,7 +52,7 @@ export default function ExoplanetFilters({
         {/* 🌍 Radio máximo */}
         <input
           type="number"
-          placeholder="Radio máximo (R⊕)"
+          placeholder={t("filters.maxRadiusPlaceholder")}
           className="bg-gray-800 rounded-lg px-3 py-2 text-white"
           value={maxRadius}
           onChange={(e) => setMaxRadius(e.target.value)}
@@ -57,7 +61,7 @@ export default function ExoplanetFilters({
         {/* 📏 Distancia */}
         <input
           type="number"
-          placeholder="Distancia máx (pc)"
+          placeholder={t("filters.maxDistancePlaceholder")}
           className="bg-gray-800 rounded-lg px-3 py-2 text-white"
           value={maxDistance}
           onChange={(e) => setMaxDistance(e.target.value)}

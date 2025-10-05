@@ -53,8 +53,8 @@ export default function Game() {
       <section className="text-center z-10 relative animate-fade-in">
         <h2 className="text-5xl font-bold mb-4">{t("pages.game.title")}</h2>
         <p className="text-gray-400 max-w-2xl mx-auto mb-6">
-          Este es solo un minijuego de memoria. Encuentra los pares de
-          exoplanetas por nombre y disfruta mientras exploramos el universo.
+          {/* Traducción de la descripción del juego */}
+          {t("pages.game.desc")}
         </p>
 
         <div className="inline-block bg-gray-900/50 p-4 rounded-2xl backdrop-blur mb-4 relative">
@@ -84,17 +84,19 @@ export default function Game() {
         </div>
 
         <p className="text-gray-300 font-medium mb-4">
-          Pares encontrados: {score}
+          {/* Traducción del marcador con interpolación de variables */}
+          {t("pages.game.score", { score })}
         </p>
         {score === 6 && (
           <p className="text-indigo-400 font-bold text-lg animate-pulse">
-            ¡Felicidades! Todos los pares encontrados ✨
+            {/* Traducción del mensaje de victoria */}
+            {t("pages.game.winMessage")}
           </p>
         )}
 
         <p className="text-yellow-400 mt-4 font-medium">
-          Nota: Este juego es un minijuego temporal. El juego real aún está en
-          desarrollo.
+          {/* Traducción de la nota */}
+          {t("pages.game.note")}
         </p>
 
         <WipNotice />
