@@ -1,4 +1,3 @@
-// src/pages/IA.jsx
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Section from "../components/Section";
@@ -35,20 +34,20 @@ export default function IA() {
     setResult(null);
 
     // Validar que todos los campos estén llenos
-    const missing = Object.values(inputs).some((value) => value === "");
-    if (missing) {
+    const hasEmpty = Object.values(inputs).some((val) => val === "");
+    if (hasEmpty) {
       setError(t("pages.ia.errorAllRequired"));
       setLoading(false);
       return;
     }
 
     // Convertir a números
-    const numericInputs = {};
+    const payload = {};
     try {
       for (const [key, value] of Object.entries(inputs)) {
         const num = parseFloat(value);
-        if (isNaN(num)) throw new Error(`Invalid number in ${key}`);
-        numericInputs[key] = num;
+        if (isNaN(num)) throw new Error("Invalid number");
+        payload[key] = num;
       }
     } catch {
       setError(t("pages.ia.errorInvalid"));
@@ -57,14 +56,17 @@ export default function IA() {
     }
 
     try {
-      // ✅ Usa la ruta relativa /predict (Vite la redirige al backend real)
-      const response = await fetch("/predict", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(numericInputs),
-      });
+      // ✅ Usa tu backend en Render
+      const response = await fetch(
+        "https://quantumcosmic-backend.onrender.com/predict",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);
