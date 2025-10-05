@@ -44,10 +44,10 @@ export default function Game() {
   const [activeGame, setActiveGame] = useState("memory");
 
   return (
-    <div className="relative min-h-screen bg-black">
+    <div className="relative min-h-screen z-10">
       <StarsBackground />
 
-      <section className="text-center z-10 relative py-12 px-4 max-w-6xl mx-auto">
+      <section className="text-center py-12 px-4 max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
           {t("pages.game.title")}
         </h2>
@@ -118,7 +118,7 @@ function MemoryGame() {
   };
 
   return (
-    <div className="inline-block bg-gray-900/50 p-4 rounded-2xl backdrop-blur">
+    <div className="inline-block bg-gray-900/80 p-4 rounded-2xl border border-gray-800 shadow-lg backdrop-blur">
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 justify-center">
         {cards.map((planet, idx) => {
           const isFlipped = flipped.includes(idx) || matched.includes(idx);
@@ -186,7 +186,7 @@ function HabitableGame() {
   if (!planet) return null;
 
   return (
-    <div className="bg-gray-900/50 p-6 rounded-2xl backdrop-blur max-w-md mx-auto">
+    <div className="bg-gray-900/80 p-6 rounded-2xl border border-gray-800 shadow-lg backdrop-blur max-w-md mx-auto">
       <div className="text-5xl mb-4">{planet.emoji}</div>
       <h3 className="text-xl font-semibold text-white mb-2">{planet.name}</h3>
       <p className="text-gray-300 mb-4">
@@ -235,7 +235,7 @@ function OrderGame() {
   const [feedback, setFeedback] = useState("");
 
   useEffect(() => {
-    setPlanets(shuffleArray([...exoplanetsData.slice(0, 4)])); // 4 planetas
+    setPlanets(shuffleArray([...exoplanetsData.slice(0, 4)]));
     setFeedback("");
   }, []);
 
@@ -271,7 +271,7 @@ function OrderGame() {
   };
 
   return (
-    <div className="bg-gray-900/50 p-6 rounded-2xl backdrop-blur max-w-md mx-auto">
+    <div className="bg-gray-900/80 p-6 rounded-2xl border border-gray-800 shadow-lg backdrop-blur max-w-md mx-auto">
       <h3 className="text-xl font-semibold text-white mb-4">
         {t("pages.game.order.title")}
       </h3>
