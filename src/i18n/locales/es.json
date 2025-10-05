@@ -27,8 +27,9 @@
       "unit_kelvin": "K",
       "unit_solar": "S⊕",
       "unit_logg": "log(g)",
+      "buttonWakingUp": "Despertando la IA... (puede tardar unos segundos)",
+      "buttonEvaluating": "Analizando...",
       "buttonEvaluate": "Evaluar Candidato",
-      "buttonEvaluating": "Prediciendo...",
       "resultTitle": "Resultado de la Predicción",
       "prediction": "Estado",
       "confidence": "Confianza",
@@ -42,15 +43,57 @@
       "noResults": "No se encontraron planetas con esos filtros."
     },
     "game": {
-      "title": "Juego de Memoria",
-      "desc": "Este es solo un minijuego de memoria. Encuentra los pares de exoplanetas por nombre y disfruta mientras exploramos el universo.",
-      "score": "Pares encontrados: {{score}}",
-      "winMessage": "¡Felicidades! Todos los pares encontrados ✨",
-      "note": "Nota: Este juego es un minijuego temporal. El juego real aún está en desarrollo."
+      "title": "Juegos Cósmicos",
+      "desc": "Aprende sobre exoplanetas mientras juegas. ¡Diviértete y descubre mundos lejanos!",
+      "score": "Puntuación: {{score}}",
+      "winMessage": "¡Felicidades! Has encontrado todos los pares.",
+      "note": "Este juego es una demostración educativa.",
+      "games": {
+        "memory": "Memoria",
+        "habitable": "¿Habitable?",
+        "order": "Ordenar por distancia"
+      },
+      "habitable": {
+        "temp": "Temperatura: {{temp}} K",
+        "yes": "Sí",
+        "no": "No",
+        "correct": "¡Correcto!",
+        "wrong": "Incorrecto. La respuesta era: {{answer}}"
+      },
+      "order": {
+        "title": "Ordena los planetas del más cercano al más lejano",
+        "ly": "años luz",
+        "check": "Verificar orden",
+        "correct": "¡Perfecto! El orden es correcto.",
+        "wrong": "Inténtalo de nuevo."
+      }
     },
     "home": {
-      "title": "EXOPLANETAS",
-      "subtitle": "Explora nuevos mundos más allá de nuestro sistema solar y descubre planetas orbitando estrellas distantes. Cada exoplaneta tiene su propia historia esperando ser descubierta."
+      "title": "Descubre el Universo",
+      "subtitle": "Explora exoplanetas, predicciones de IA y maravillas cósmicas más allá de nuestro sistema solar.",
+      "cta": "Explorar Exoplanetas",
+      "features": {
+        "title": "Por qué explorar con nosotros",
+        "subtitle": "Herramientas avanzadas para entender los mundos más allá de la Tierra.",
+        "ai": {
+          "title": "IA Predictiva",
+          "desc": "Clasifica candidatos a exoplanetas usando modelos de machine learning entrenados con datos reales de Kepler."
+        },
+        "data": {
+          "title": "Datos Reales",
+          "desc": "Accede a una base de datos actualizada con cientos de exoplanetas confirmados y sus propiedades físicas."
+        },
+        "explore": {
+          "title": "Exploración Visual",
+          "desc": "Visualiza órbitas, tamaños relativos y zonas habitables en una interfaz interactiva."
+        }
+      },
+      "ctaSection": {
+        "title": "¿Listo para tu viaje interestelar?",
+        "subtitle": "Prueba nuestro clasificador de IA o explora la base de datos de exoplanetas.",
+        "button1": "Probar la IA",
+        "button2": "Ver Exoplanetas"
+      }
     }
   },
   "footer": "© {{year}} QuantumCosmic",

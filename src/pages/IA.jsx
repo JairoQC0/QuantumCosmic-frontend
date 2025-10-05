@@ -176,12 +176,12 @@ export default function IA() {
               disabled={loading}
               className={`px-6 py-2.5 rounded-lg font-medium transition ${
                 loading
-                  ? "bg-gray-600 cursor-not-allowed"
+                  ? "bg-indigo-700 cursor-wait"
                   : "bg-indigo-500 hover:bg-indigo-600 text-white"
               }`}
             >
               {loading
-                ? t("pages.ia.buttonEvaluating")
+                ? t("pages.ia.buttonWakingUp")
                 : t("pages.ia.buttonEvaluate")}
             </button>
           </form>

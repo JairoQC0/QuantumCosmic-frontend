@@ -27,8 +27,9 @@
       "unit_kelvin": "K",
       "unit_solar": "S⊕",
       "unit_logg": "log(g)",
+      "buttonWakingUp": "Waking up the AI... (may take a few seconds)",
+      "buttonEvaluating": "Analyzing...",
       "buttonEvaluate": "Evaluate Candidate",
-      "buttonEvaluating": "Predicting...",
       "resultTitle": "Prediction Result",
       "prediction": "Status",
       "confidence": "Confidence",
@@ -42,15 +43,57 @@
       "noResults": "No planets were found with these filters."
     },
     "game": {
-      "title": "Memory Game",
-      "desc": "This is just a memory mini-game. Find the matching pairs of exoplanets by name and have fun while we explore the universe.",
-      "score": "Pairs found: {{score}}",
-      "winMessage": "Congratulations! All pairs found ✨",
-      "note": "Note: This is a temporary mini-game. The actual game is still under development."
+      "title": "Cosmic Games",
+      "desc": "Learn about exoplanets while playing. Have fun and discover distant worlds!",
+      "score": "Score: {{score}}",
+      "winMessage": "Congratulations! You found all the pairs.",
+      "note": "This game is an educational demo.",
+      "games": {
+        "memory": "Memory",
+        "habitable": "Habitable?",
+        "order": "Order by Distance"
+      },
+      "habitable": {
+        "temp": "Temperature: {{temp}} K",
+        "yes": "Yes",
+        "no": "No",
+        "correct": "Correct!",
+        "wrong": "Wrong. The answer was: {{answer}}"
+      },
+      "order": {
+        "title": "Order planets from closest to farthest",
+        "ly": "light-years",
+        "check": "Check Order",
+        "correct": "Perfect! The order is correct.",
+        "wrong": "Try again."
+      }
     },
     "home": {
-      "title": "EXOPLANETS",
-      "subtitle": "Explore new worlds beyond our solar system and discover planets orbiting distant stars. Each exoplanet has its own story waiting to be uncovered."
+      "title": "Discover the Universe",
+      "subtitle": "Explore exoplanets, AI predictions, and cosmic wonders beyond our solar system.",
+      "cta": "Explore Exoplanets",
+      "features": {
+        "title": "Why explore with us",
+        "subtitle": "Advanced tools to understand worlds beyond Earth.",
+        "ai": {
+          "title": "Predictive AI",
+          "desc": "Classify exoplanet candidates using machine learning models trained on real Kepler data."
+        },
+        "data": {
+          "title": "Real Data",
+          "desc": "Access an updated database with hundreds of confirmed exoplanets and their physical properties."
+        },
+        "explore": {
+          "title": "Visual Exploration",
+          "desc": "Visualize orbits, relative sizes, and habitable zones in an interactive interface."
+        }
+      },
+      "ctaSection": {
+        "title": "Ready for your interstellar journey?",
+        "subtitle": "Try our AI classifier or explore the exoplanet database.",
+        "button1": "Try the AI",
+        "button2": "View Exoplanets"
+      }
     }
   },
   "footer": "© {{year}} QuantumCosmic",
