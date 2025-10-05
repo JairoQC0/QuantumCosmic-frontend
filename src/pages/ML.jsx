@@ -2,10 +2,10 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import WipNotice from "../components/WipNotice";
 import Section from "../components/Section";
-
+import StarsBackground from "../components/StarsBackground";
 export default function ML() {
   const { t } = useTranslation();
-  
+
   const [inputs, setInputs] = useState({
     starDistance: "",
     orbitalPeriod: "",
@@ -18,7 +18,8 @@ export default function ML() {
 
   return (
     // Usamos la clave de IA para el título, ya que parece que IA es la versión traducida de ML
-    <Section titleKey="pages.ia.title"> 
+    <Section titleKey="pages.ia.title">
+      <StarsBackground />
       <div className="text-center animate-fade-in">
         {/* Usamos la clave de IA para la descripción */}
         <p className="text-gray-400 max-w-2xl mx-auto mb-8">

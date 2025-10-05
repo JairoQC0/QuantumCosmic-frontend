@@ -7,9 +7,8 @@ import StarsBackground from "../components/StarsBackground";
 import exoplanets from "../data/exoplanets.json";
 
 export default function Exoplanetas() {
-  // Inicializamos useTranslation
   const { t } = useTranslation();
-  
+
   const [search, setSearch] = useState("");
   const [year, setYear] = useState("");
   const [minRadius, setMinRadius] = useState("");
