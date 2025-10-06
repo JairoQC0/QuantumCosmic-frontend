@@ -1,5 +1,6 @@
 // src/pages/Home.jsx
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom"; // 👈 Importamos Link
 import PlanetSphere from "../components/PlanetSphere";
 import StarsBackground from "../components/StarsBackground";
 
@@ -40,12 +41,13 @@ export default function Home() {
             {t("pages.home.subtitle")}
           </p>
           <div className="mt-6">
-            <a
-              href="/exoplanetas"
+            {/* ✅ Usamos Link en lugar de <a> */}
+            <Link
+              to="/exoplanetas"
               className="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-medium text-white transition shadow-lg hover:shadow-indigo-500/20"
             >
               {t("pages.home.cta")}
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -91,18 +93,19 @@ export default function Home() {
           {t("pages.home.ctaSection.subtitle")}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="/ia"
+          {/* ✅ Botones con Link */}
+          <Link
+            to="/ia"
             className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 rounded-lg font-medium text-white transition shadow-lg"
           >
             {t("pages.home.ctaSection.button1")}
-          </a>
-          <a
-            href="/exoplanetas"
+          </Link>
+          <Link
+            to="/exoplanetas"
             className="px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg font-medium text-white transition border border-gray-700"
           >
             {t("pages.home.ctaSection.button2")}
-          </a>
+          </Link>
         </div>
       </div>
     </div>
